@@ -1,0 +1,47 @@
+.img_header {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+
+.filter{
+    background: black;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.31;
+}
+
+.logo{
+    width: 85px;
+    position: relative;
+    margin-top: 353px;
+}
+
+.name{
+    width: 338px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+    position: absolute;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 117px;
+    left: 50%;
+    margin-left: -169px;
+}
+
+.name2{
+    color: white;
+    font-size: xx-large;
+}
+
+.role{
+    color: white;
+    font-size: large;
+}
