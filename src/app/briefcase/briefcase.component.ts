@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-briefcase',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BriefcaseComponent implements OnInit {
 
-  constructor() { }
+  public form!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      name: [null,],
+      email: [null,],
+      text: [null,],
+    })
+  }
+
+  onSubmit(values: any) {
+    // console.log(values);
+    if (this.form.valid) {
+
+    }
   }
 
 }

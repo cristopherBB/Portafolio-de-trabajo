@@ -11,5 +11,76 @@
 <div style="text-align: center;">
     <img class="logo" src="assets/img/logo.png" alt="">
 </div>
+<div class="presentation">
+    <h2 class="about">Acerca de</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus esse, cupiditate animi iure vero provident <br> dignissimos dolorem distinctio odit nihil eaque, delectus, cumque maiores nesciunt vitae iusto voluptatem omnis recusandae.</p>
+</div>
+<div class="works">
+    <h2 style="margin-bottom: 40px;">Trabajos</h2>
+    <div class="works_container">
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+        <div class="work">
+            <img class="img_work" src="assets/img/fondo.jpg" alt="">
+            <br>
+            <label style="color: blue;">Lorem ipsum</label>
+            <br>
+            <label>HTML-CSS-PHP</label>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <h2 style="color: blue;">Contactame</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Ex. Cristopher Bolívar" formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Correo</mat-label>
+            <input matInput type="email" placeholder="Ex. Hola@gmail.com" formControlName="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width2" appearance="fill">
+            <mat-label>Mensaje</mat-label>
+            <textarea matInput placeholder="Ex. Buenas tardes..." formControlName="text"></textarea>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button type="submit" style="background-color: rgba(128, 255, 0, 0.384);">Enviar</button>
+    </form>
+</div>
 
 

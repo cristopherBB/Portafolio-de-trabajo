@@ -45,3 +45,55 @@
     color: white;
     font-size: large;
 }
+
+.presentation{
+    margin-top: 33px;
+    text-align: center;
+}
+
+.about{
+    color: rgb(224, 95, 3);
+}
+
+.works{
+    margin-top: 40px;
+    background: #a9a9a930;
+    width: 100%;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.img_work{
+    width: 140px;
+    height: 140px;
+}
+
+.work{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.works_container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 54%;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.example-full-width{
+    margin: 10px;
+}
+
+.example-full-width2{
+    margin: 10px;
+    width: 424px;
+    margin-top: 0px;
+}
+
