@@ -49,11 +49,14 @@
 .presentation{
     margin-top: 33px;
     text-align: center;
+    .about{
+        color: rgb(224, 95, 3);
+    }
 }
 
-.about{
+/*.about{
     color: rgb(224, 95, 3);
-}
+}*/
 
 .works{
     margin-top: 40px;
@@ -80,6 +83,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     width: 54%;
+    justify-content: space-evenly;
 }
 
 .contact{
@@ -97,3 +101,20 @@
     margin-top: 0px;
 }
 
+.element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_contact{
+    height: 40px;
+}
+
+.contact_list{
+    margin-top: 50px;
+    width: 41%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 55px;
+}
