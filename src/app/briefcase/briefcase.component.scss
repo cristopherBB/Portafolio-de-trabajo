@@ -34,17 +34,27 @@
     margin-top: 117px;
     left: 50%;
     margin-left: -169px;
+    .name2{
+        color: white;
+        font-size: xx-large;
+    }
+    .role{
+        color: white;
+        font-size: large;
+    }
+    @media (max-width: 500px){
+        width: 250px;
+        margin-left: -125px;
+        .name2{
+            font-size: x-large;
+        }
+        .role{
+            font-size: large;
+        }
+    }
 }
 
-.name2{
-    color: white;
-    font-size: xx-large;
-}
 
-.role{
-    color: white;
-    font-size: large;
-}
 
 .presentation{
     margin-top: 33px;
@@ -53,10 +63,6 @@
         color: rgb(224, 95, 3);
     }
 }
-
-/*.about{
-    color: rgb(224, 95, 3);
-}*/
 
 .works{
     margin-top: 40px;
@@ -117,4 +123,7 @@
     display: inline-flex;
     justify-content: space-around;
     margin-bottom: 55px;
+    @media (max-width: 1114px){
+        flex-direction: column;
+    }
 }

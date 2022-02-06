@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
@@ -8,9 +8,26 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  //@ViewChild('aboutID') aboutID: ElementRef | undefined;
+  constructor(private renderer2: Renderer2) { }
 
   ngOnInit(): void {
+  }
+
+  about(){
+    let element = document.getElementById("aboutID")
+    element!.scrollIntoView({behavior: 'smooth'});
+  }
+
+  works(){
+    let element = document.getElementById("worksID")
+    element!.scrollIntoView({behavior: 'smooth'});
+  }
+
+  contact(){
+    console.log("hola")
+    let element = document.getElementById("contactID")
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 
 }
