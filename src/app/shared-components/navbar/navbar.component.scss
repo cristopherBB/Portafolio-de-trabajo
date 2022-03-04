@@ -1,4 +1,4 @@
-.navbar{
+/*.navbar{
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -14,4 +14,34 @@
         justify-content: center;
         width: 100%;
     }
+}*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+    .logo{
+        display: flex;
+        mat-icon{
+            padding-top: 5px;
+            padding-right: 5px;
+            color: #7510F7;
+        }
+    }
+    h2{
+        font-size: 25px;
+        color: #7510F7;
+    }
+    .button{
+        font-size: 18px;
+        font-weight: 300;
+        &:hover{
+            color: #7510F7;
+        }
+    }
+    @media(max-width: 515px){
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

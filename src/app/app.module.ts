@@ -12,12 +12,15 @@ import { MatInputModule } from '@angular/material/input';
 
 // Angular material
 import {MatButtonModule} from '@angular/material/button';
+import { BriefcaseV2Component } from './briefcase-v2/briefcase-v2.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     BriefcaseComponent,
-    NavbarComponent
+    NavbarComponent,
+    BriefcaseV2Component
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule
 
   ],
   providers: [],
